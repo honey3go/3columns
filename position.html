@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>定位布局</title>
+    <style type="text/css">
+        #container{
+            position: relative;
+        }
+        #container div{
+            height: 100px;
+        }
+        .main{
+            background-color: blue;
+            margin: 0 210px 0 200px;
+        }
+        .sub{
+            width: 200px;
+            background-color: red;
+            position: absolute;
+            top: 0;
+        }
+        .extra{
+            width: 210px;
+            background-color: yellow;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+<div id="page">
+    <div id="container">
+        <div class="main">main</div>
+        <div class="sub">sub</div>
+        <div class="extra">extra</div>
+    </div>
+</div>
+</body>
+</html>
